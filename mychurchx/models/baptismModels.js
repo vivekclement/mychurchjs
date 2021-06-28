@@ -1,0 +1,86 @@
+const mongoose = require('mongoose')
+const baptismTemplate = new mongoose.Schema({
+    baptismNumber:{
+        type:Number,
+        //unique: true,
+        required:false
+    },
+    parishNumber:{
+        type:Number,
+        required:false
+    },
+    familyNumber:{
+        type:Number,
+        required:false
+    }, 
+    fullName:{
+         type:String,
+         required:false
+     },
+     sex:{
+        type:String,
+        required:false
+    },
+    dateOfBaptism:{
+        type:Date,
+        required:false
+    },
+    placeOfBaptism:{
+        type:String,
+        required:false
+    },
+    dateOfBirth:{
+        type:Date,
+        required:false
+    },
+    placeOfBirth:{
+        type:String,
+        required:false
+    },
+    fathersName:{
+        type:String,
+        required:false
+    },
+    mothersName:{
+        type:String,
+        required:false
+    },
+    address:{
+        type:String,
+        required:false
+    },
+    godFatherName:{
+        type:String,
+        required:false
+    },
+    godMotherName:{
+        type:String,
+        required:false
+    },
+    ministerBaptismFr:{
+        type:String,
+        required:false
+    },
+    marriedTo:{
+        type:String,
+        required:false
+    },
+    marriedWhen:{
+        type:Date,
+        required:false
+    },
+    marriedWhere:{
+        type:String,
+        required:false
+    },
+    dateCreated:{
+        type:Date,
+        default:Date.now
+    }
+    
+},
+{
+    timestamps: true,
+
+})
+module.exports = mongoose.model('baptism',baptismTemplate)

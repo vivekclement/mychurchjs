@@ -1,0 +1,21 @@
+POST http://localhost:4000/api/baptism
+Content-Type: application/json
+
+{
+    "parishNumber" :   "1",     
+"familyNumber" :   "100",      
+"fullName" :   "Vivek Clement",          
+"sex" :   "M",              
+"dateOfBaptism" :   "01-JAN-2012",    
+"dateOfBirth" :   "25-DEC-2011",     
+"placeOfBirth" :   "Trichy",      
+"fathersName" :   "Clement Amalraj",       
+"mothersName" :   "Angeline Sahayamary",       
+"address" :   "Plot 1 Crawford Colony",        
+"godFatherName" :   "Pushparaj Amalraj",     
+"godMotherName" :   "Catherine Pushparaj",     
+"ministerBaptismFr" :   "Rev. Fr. John",
+"marriedTo" :   "N/A", 
+"marriedWhen" : "N/A",     
+"marriedWhere" : "N/A"     
+}

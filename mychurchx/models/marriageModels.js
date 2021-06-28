@@ -1,0 +1,90 @@
+const mongoose = require('mongoose')
+const marriageTemplate = new mongoose.Schema({
+    marriageNumber:{
+        type:Number,
+        unique: true,
+        required:true
+    },
+    parishNumber:{
+        type:Number,
+        required:true
+    },
+    familyNumber:{
+        type:Number,
+        required:true
+    }, 
+    dateOfMarriage:{
+         type:String,
+         required:true
+     },
+     bridegroomName:{
+        type:String,
+        required:true
+    },
+    bachelorOrWidower:{
+        type:String,
+        required:true
+    },
+    bridegroomAge:{
+        type:Number,
+        required:true
+    },
+    bridegroomDomicile:{
+        type:String,
+        required:true
+    },
+    fathersName:{
+        type:String,
+        required:true
+    },
+    mothersName:{
+        type:String,
+        required:true
+    },
+    bridesName:{
+        type:String,
+        required:true
+    },
+    spinsterOrWidow:{
+        type:String,
+        required:true
+    },
+    brideAge:{
+        type:Number,
+        required:true
+    },
+    brideDomicile:{
+        type:String,
+        required:true
+    },
+    godMotherName:{
+        type:String,
+        required:true
+    },
+    ministerBaptismFr:{
+        type:String,
+        required:true
+    },
+    marriedTo:{
+        type:String,
+        required:false
+    },
+    marriedWhen:{
+        type:Date,
+        required:false
+    },
+    marriedWhere:{
+        type:String,
+        required:false
+    },
+    dateCreated:{
+        type:Date,
+        default:Date.now
+    }
+    
+},
+{
+    timestamps: true,
+
+})
+module.exports = mongoose.model('marriage',marriageTemplate)
